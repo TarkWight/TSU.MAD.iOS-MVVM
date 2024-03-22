@@ -22,7 +22,7 @@ final class PhoneNumberFormatter: PhoneNumberFormatterProtocol {
         
         let digitsOnly = formattedNumber.replacingOccurrences(of: "[^0-9]", with: "", options: .regularExpression)
         
-        guard digitsOnly.count >= 10 else {
+        guard digitsOnly.count == 10 else {
             return nil
         }
        
