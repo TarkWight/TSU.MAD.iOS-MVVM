@@ -11,6 +11,11 @@
 		B00FC0092BABFCA600980D31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00FC0082BABFCA600980D31 /* ContentView.swift */; };
 		B00FC00B2BABFCA800980D31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00FC00A2BABFCA800980D31 /* Assets.xcassets */; };
 		B00FC00E2BABFCA800980D31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00FC00D2BABFCA800980D31 /* Preview Assets.xcassets */; };
+		B0ECB14C2BAC1534003B4D57 /* PhoneNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ECB14B2BAC1534003B4D57 /* PhoneNumberViewModel.swift */; };
+		B0ECB1522BAD1F7D003B4D57 /* PhoneNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ECB1512BAD1F7D003B4D57 /* PhoneNumberFormatter.swift */; };
+		B0ECB1542BAD1FE4003B4D57 /* PhoneNumberValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ECB1532BAD1FE4003B4D57 /* PhoneNumberValidationService.swift */; };
+		B0ECB1562BAD210E003B4D57 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ECB1552BAD210E003B4D57 /* PhoneNumber.swift */; };
+		B0ECB15C2BAD238C003B4D57 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ECB15B2BAD238C003B4D57 /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		B00FC0082BABFCA600980D31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B00FC00A2BABFCA800980D31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B00FC00D2BABFCA800980D31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B0ECB14B2BAC1534003B4D57 /* PhoneNumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewModel.swift; sourceTree = "<group>"; };
+		B0ECB1512BAD1F7D003B4D57 /* PhoneNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberFormatter.swift; sourceTree = "<group>"; };
+		B0ECB1532BAD1FE4003B4D57 /* PhoneNumberValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberValidationService.swift; sourceTree = "<group>"; };
+		B0ECB1552BAD210E003B4D57 /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
+		B0ECB15B2BAD238C003B4D57 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +62,12 @@
 			isa = PBXGroup;
 			children = (
 				B00FC0062BABFCA600980D31 /* MVVMApp.swift */,
-				B00FC0082BABFCA600980D31 /* ContentView.swift */,
-				B00FC00A2BABFCA800980D31 /* Assets.xcassets */,
+				B0ECB14D2BAD1E93003B4D57 /* Model */,
+				B0ECB14E2BAD1EA7003B4D57 /* ViewModel */,
+				B0ECB1502BAD1EBC003B4D57 /* Service */,
+				B0ECB14F2BAD1EAF003B4D57 /* View */,
 				B00FC00C2BABFCA800980D31 /* Preview Content */,
+				B00FC00A2BABFCA800980D31 /* Assets.xcassets */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -65,6 +78,40 @@
 				B00FC00D2BABFCA800980D31 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B0ECB14D2BAD1E93003B4D57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B0ECB1552BAD210E003B4D57 /* PhoneNumber.swift */,
+				B0ECB1512BAD1F7D003B4D57 /* PhoneNumberFormatter.swift */,
+				B0ECB15B2BAD238C003B4D57 /* Repository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B0ECB14E2BAD1EA7003B4D57 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B0ECB14B2BAC1534003B4D57 /* PhoneNumberViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B0ECB14F2BAD1EAF003B4D57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B00FC0082BABFCA600980D31 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B0ECB1502BAD1EBC003B4D57 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B0ECB1532BAD1FE4003B4D57 /* PhoneNumberValidationService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0ECB15C2BAD238C003B4D57 /* Repository.swift in Sources */,
 				B00FC0092BABFCA600980D31 /* ContentView.swift in Sources */,
 				B00FC0072BABFCA600980D31 /* MVVMApp.swift in Sources */,
+				B0ECB1522BAD1F7D003B4D57 /* PhoneNumberFormatter.swift in Sources */,
+				B0ECB1542BAD1FE4003B4D57 /* PhoneNumberValidationService.swift in Sources */,
+				B0ECB14C2BAC1534003B4D57 /* PhoneNumberViewModel.swift in Sources */,
+				B0ECB1562BAD210E003B4D57 /* PhoneNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,8 +329,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,9 +337,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Tark-Wight.MVVM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,8 +360,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,9 +368,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Tark-Wight.MVVM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
